@@ -1,0 +1,413 @@
+/* === ATENCION: esta hojas de estilo es sólo la del index, osea la de la home ====*/
+
+/* == SECCION 01 - HERO == */
+.sec-01-containter { 
+    background-image: url(IMG/Index/index_Sec-01-Back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 1024px; /* alto máximo de la section 01 */
+
+    margin: 0;          
+    padding: 1rem 2.5rem 1rem 2.5rem; /* ARRIBA - DER - ABAJO - IZQUIERDA */
+
+    position: relative;      /* importante */
+    overflow: hidden;        /* corta el degradado dentro de la sección */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centra vertical */
+    align-items: flex-start;  /* alineado a la izquierda */
+
+}
+
+.sec-01-container { 
+
+    position: relative;
+    z-index: 2;
+
+    padding-top: 10%; 
+    margin: 0;
+}
+
+/* DEGRADADO OVERLAY */
+.sec-01-containter::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;  /* gradiente a mitad del alto */
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.6), /* abajo */
+        rgba(0,0,0,0) /* arriba */
+    );
+    pointer-events: none;  /* para que no bloquee clics */
+    z-index: 1;
+}
+
+.sec-01-containter h1{
+    font-size: 40px;
+    color: var(--beige);
+    max-width: 55%;
+}
+
+.sec-01-grid-container span {
+    font-weight: 700;
+}
+
+/* BOTON NARANJA - HERO */
+.sec-01-containter a{
+
+    display: flex;
+    justify-content: center;      
+    align-items: center;  
+
+    margin-top: 3%;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--beige);
+
+    height: 44px;
+    width: 275px;
+    background-color: var(--naranja);
+
+    border-radius: 999px; 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /*  EJE X - EJE Y - BLUR - COLOR Y OPACIDAD */
+ 
+    transition: all .25s ease; 
+}
+
+.sec-01-containter a:hover {
+  transform: translateY(-3px) scale(1.01);   /* sube y agranda 3% */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);  /* sombra más profunda */
+}
+
+/* ========================================================================================================================= */
+/* ================================================= SECCION 02 ============================================================ */
+/* ========================================================================================================================= */
+
+.sec-02-container{
+    background-image: url(IMG/Index/index-Sec-02-Back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin: 0;
+    padding: 4rem 2.5rem 6rem;
+}
+
+.sec-02-grid-container{
+    width: 100%;
+    margin: 6rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8rem; /* espacio entre top y cards */
+}
+
+/* ------------------------- */
+/* BLOQUE SUPERIOR           */
+/* ------------------------- */
+
+.sec-02-top{
+    display: flex;
+    align-items: center;
+}
+
+.sec-02-01{
+    flex: 1;
+}
+
+.sec-02-01 h2{
+    font-size: 35px;
+    line-height: 1.2;
+    color: var(--rosa);
+    margin: 0 0 1rem 0;
+}
+
+.sec-02-01 p{
+    font-size: 20px;
+    max-width: 75%;
+    line-height: 1.6;
+    color: var(--gris);
+    margin: 0;
+    padding: 25px 0;
+}
+
+/* Imagen */
+.sec-02-top img{
+    flex: 1;
+    width: 100%;
+    height: 440px;      
+    object-fit: cover;  /* para que no se deforme */
+    border-radius: 20px;
+}
+
+/* ------------------------- */
+/* BLOQUE INFERIOR — CARDS   */
+/* ------------------------- */
+
+.sec-02-02{
+    display: flex;
+    gap: 2rem;
+}
+
+.sec-02-02-card{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 25px;
+    background-color: var(--beige);
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+.sec-02-02-card h3{
+    margin: 1rem 0 1rem 0;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--gris);
+}
+
+
+/* Botón */
+.sec-02-02-card a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+
+    border-radius: 999px;
+    background-color: var(--naranja);
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 1.5s ease-out; /* --> transición de salida del hoover, ver animación! */
+}
+
+.cards-p{
+
+    margin: 1rem 0 2rem 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--gris);
+}
+
+.sec-02-02-card a:hover{
+
+    border: 2px solid;
+    border-color: var(--naranja);
+
+    background-color: white;
+
+    color: var(--naranja);
+
+    transition: 0.50s ease-in; /* --> transición de salida del hoover, ver animación! */
+}
+
+/* ========================================================================================================================= */
+/* ================================================= SECCION 03 ============================================================ */
+/* ========================================================================================================================= */
+
+
+.sec-03-container{
+
+    background-color: var(--crema);
+    margin: 0;
+    padding: 4rem 2.5rem 6rem;
+
+}
+
+.sec-03-grid{
+    margin: 6rem 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-03-grid h1{
+    font-size: 40px;
+}
+
+.sec-03-grid p{
+
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 25px 0;
+}
+
+.sec-03-grid span{
+    font-weight: 400;
+}
+
+.sec-03-grid a{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+    width: 320px;
+    height: 40px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+    background-color: var(--naranja);
+    border-radius: 999px;
+
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.sec-03-grid a:hover{
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+
+}
+
+
+/* == CARDS - PROFESIONALES == */
+
+.carrusel-cards{
+    margin: 0px 12rem;
+}
+
+.carru-item{
+    position: relative;
+
+    width: 425px;
+
+    border-radius: 20px;
+    overflow: hidden;     
+}
+
+/* IMAGEN */
+.carru-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    display: block;
+}
+
+/* DEGRADADO */
+.carru-item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 35%;  /* hasta dónde sube el degradado */
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.50),
+        rgba(0,0,0,0)
+    );
+}
+
+/* TEXTO */
+.card-info{
+    position: absolute;
+    bottom: 1.5rem;        
+
+    left: 50%;             /* centrado */
+    transform: translateX(-50%);
+
+    width: 100%;           /* para que centre bien */
+    text-align: center;    
+
+    z-index: 1;
+    color: #fff;
+
+    margin: 0;
+    padding: 25px;
+}
+
+.card-info h4{
+    margin: 0;
+    font-size: 28px;
+    font-family: "adriane", serif;
+    font-weight: 700;
+}
+
+.card-info p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FLECHAS DEL CARRUSEL */
+.arrow{
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    border: none;
+    color: #fff;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2; /* por encima de la imagen y del degradado */
+}
+
+.arrow-i{
+    left: 15px;
+}
+
+.arrow-d{
+    right: 15px;
+}
+
+.arrow:hover{
+    background: rgba(0,0,0,0.7);
+}
+
+/* ------------------------- */
+/* RESPONSIVE                */
+/* ------------------------- */
+
+@media (max-width: 900px){
+
+    .sec-02-top{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sec-02-02{
+        flex-direction: column;
+    }
+
+    .sec-02-02-card{
+        width: 100%;
+    }
+}

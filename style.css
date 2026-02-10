@@ -1,0 +1,295 @@
+
+/* == ATENCION!!
+
+ESTE DOCUMENTOS NO LO USEN PARA LOS ESTILOS INDIVIDUALES DE LAS SECCIONES, ES PARA LOS ESTILOS BASE DE TODA LA WEB :) 
+CUANDO HAGAN SUS SECCIONES, INDEXEN LOS CSS/ JS CORRESPONDIENTES A SUS SECCIONES  PARA QUE ESTE TODO ORDENADO. 
+CUALQUIER DUDA ME DICEN!!
+
+== */
+
+/* == COLORES BASE == */
+:root{
+
+    /*PARA TITULOS*/  --rosa: #F745AB;
+    /*PARA BOTONES*/  --naranja: #EF894E;
+    /*PARA CARDS*/    --beige: #FBE4D2;
+    /*PARA CARDS*/    --beige-2: #fcede2;
+    /*PARA FONDOS */  --crema: #fff9f3;
+    /*PARA TEXTO*/    --gris: #5E6B82;    
+}
+
+/* ==== PARAMETROS GENERALES ==== */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    
+    font-family: "petala-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--gris);
+
+    background-color:  var(--crema);
+}
+
+/* ============== TEXTOS ============== */
+
+h1, h2{
+
+    font-family: "adriane", serif;
+    font-weight: 300;
+    
+}
+
+
+p{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+/* ============== NAV ============== */
+
+nav{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;        /* para que quede por encima de la imagen */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: transparent;
+
+    margin: 0;
+    padding: 2rem 2.5rem;
+
+    transition: transform 1s ease;
+}
+
+nav.nav-hidden {
+  transform: translateY(-100%); /* se va para arriba y se oculta */
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;  /* cubre todo el nav -> acá la opacidad va de 100% a 0% del alto */
+    background: linear-gradient(
+        to bottom,
+        hsla(32, 63%, 23%, 0.7) 0%,
+        hsla(32, 63%, 23%, 0) 100%
+    );
+    z-index: -1; /* MUY IMPORTANTE - queda debajo del nav, entonces cuando scroleas para arriba, sale la sombrita */
+}
+
+nav ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    width: 100%;
+    gap: 1.5rem;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+nav a{
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--beige);
+}
+
+
+nav a:hover{
+    color: var(--naranja);
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+
+.logo img{
+    width: 70px;
+    object-fit: contain;
+}
+
+
+/* ============== FOOTER ============== */
+
+/* footer */
+footer{
+    background-color: var(--gris);
+    
+    margin: 0;
+    padding: 4rem 2.5rem 6rem;
+
+    color: white;
+}
+
+/* contenedor */
+.footer-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* columnas del mismo alto */
+    gap: 5rem;
+}
+
+.footer-form,
+.footer-mapa,
+.logo-legales{
+
+    flex: 1;
+}
+
+.footer-container h3{
+    margin-top: 0;
+}
+
+/* Footer LOGO + Legales */
+
+.logo-legales{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0;
+}
+
+.logo-legales a{
+    text-decoration: none;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.logo-legales ul{
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.logo-legales li{
+    padding: 10px 0;
+    margin: 0;
+}
+
+.logo-legales img{
+    width: 120px;
+    object-fit: contain;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/* DIV mapa*/
+
+.footer-mapa{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-mapa p{
+    font-size: 15px;
+}
+
+.footer-mapa iframe{
+
+    flex: 1;        /* ocupa el espacio libre */
+    height: auto;
+    margin-top: 1rem;
+    border: 0;
+}
+
+/* FORM */
+
+.footer-form{
+
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/* fielset */
+.footer-form fieldset{
+    border: none;
+
+    margin: 0;
+    padding: 4px 0;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+/* Label */
+.footer-form label{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Inputs y textarea al 100% del ancho del form */
+.footer-form input,
+.footer-form textarea{
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Botón del footer */
+.footer-form button{
+    margin-top: 1rem;
+    align-self: flex-start;   /* para que no se estire al 100% */
+    padding: 0.6rem 1.4rem;
+
+    width: 100%;
+
+    border-radius: 999px;
+    border: none;
+    background-color: var(--naranja);
+
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.footer-form button:hover{
+    
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+

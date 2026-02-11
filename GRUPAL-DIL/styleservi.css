@@ -1,0 +1,215 @@
+:root {
+    
+    --rosa: #F745AB; /* para los titulos*/
+    
+    --naranja: #EF894E; /* para los botones*/
+    
+    --beige: #FBE4D2; /* para las cards*/
+    
+    --crema: #fff9f3; /* para el fondo*/
+    
+    --gris: #5E6B82; /* para los textos*/
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--crema);
+    color: var(--gris);
+    font-family: "petala-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+    background-image: 
+        linear-gradient(rgba(255, 249, 243, 0.6), rgba(255, 249, 243, 0.6)), 
+        url('../GRUPAL-DIL/img-videos/imagen\ fondo.png'); 
+    background-size: cover;      
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "petala-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--rosa);
+}
+
+p, a, span, li, button {
+    font-family: "petala-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #95d6c8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 48px;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--gris);
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--rosa);
+}
+
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 60px 40px;
+}
+
+
+.card {
+   background: rgba(251, 228, 210, 0.9);
+    border-radius: 18px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* sombra rosada */
+    box-shadow: 0 0 10px 2px rgba(247, 69, 171, 0.4);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px 4px rgba(247, 69, 171, 0.6);
+}
+
+.card h2 {
+    margin-bottom: 12px;
+}
+
+/* ICONOS */
+.icon {
+    font-size: 42px;
+    color: var(--naranja);
+    margin-bottom: 12px;
+   animation: flotar 2.5s infinite ease-in-out;
+}
+
+
+.btn {
+    background: var(--naranja);
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--rosa);
+    transform: scale(1.05);
+}
+
+
+.video {
+    width: 100%;
+    margin-top: 18px;
+    border-radius: 12px;
+    display: none;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.12);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+    }
+
+    .servicios {
+        padding: 30px;
+    }
+}
+
+.footer {
+    background: var(--crema);
+    padding: 20px;
+    border-top: 2px solid var(--beige);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;  
+    gap: 8px;                 
+    text-align: center;       
+}
+
+.footer p {
+    color: var(--gris);
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-logo {
+    width: 70px;            
+    height: auto;
+    border-radius: 50%;    
+    box-shadow: 0 1px 5px rgba(10, 10, 10, 0.2); 
+    }

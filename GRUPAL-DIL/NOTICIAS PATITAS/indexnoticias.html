@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Patitas</title>
+    <link rel="stylesheet" href="noticias.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-izq">
+            <a href="file:///Users/mikakishi/Documents/CURSOS/Curso_Fuenlabrada/3-TP/3.2_TP-GRUPAL/index.html"><img
+                    src="img/Logo-2.png" alt="Patitas" class="logo"></a>
+            <h1>Clínica Veterinaria Patitas</h1>
+        </div>
+
+        <div class="header-der">
+            <h2 class="titulo-noticias">Noticias Relevantes</h2>
+            <p class="subtitulo-noticias">Información y cuidado para tu mascota</p>
+        </div>
+    </header>
+
+    <section class="filtro">
+        <h2>Filtrar por:</h2>
+        <button data-animal="perro">🐶PERROS</button>
+        <button data-animal="gato">🐱GATOS</button>
+        <button data-animal="conejo">🐰CONEJOS</button>
+        <button data-animal="todas">🐾 TODAS</button>
+    </section>
+
+    <section class="grid-noticias" id="noticias"></section>
+
+    <!-- POPUP -->
+    <div class="modal" id="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalTexto"></p>
+            <a id="modalPdf" class="btn" download>Descargar PDF</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Clínica Veterinaria Patitas | Marca Profesional</p>
+            <img src="img/conejito.jpg" alt="conejito" class="footer-logo">
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

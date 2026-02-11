@@ -1,0 +1,192 @@
+/* === ATENCION: esta hojas de estilo es sólo la de NOSOTROS ====*/
+
+/* === HERRO VIDEO ===*/
+
+
+.hero-conainer{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-conainer video{
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    z-index: 1;
+
+    filter: brightness(0.5); /* esto es para oscurecer el video de fondo y que se vea el texto*/
+}
+
+.hero-text{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    padding: 0 18%;
+}
+
+.hero-text h1{
+    font-size: 40px;
+    color: var(--beige);
+}
+
+.hero-text p{
+    font-size: 20px;
+    color: var(--beige);
+}
+
+
+/* =================== SECTION 2 ===================== */
+
+.sec-02{
+    margin: 0;
+    padding: 8rem 2.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec-02 img{
+    max-width: 700px;
+    border-radius: 20px;
+}
+
+.sec-02-text{
+    width: 40%;
+}
+
+.sec-02-text h2{
+    font-size: 33px;
+    line-height: 1.2;
+    color: var(--rosa);
+    margin: 0 0 1rem 0;
+}
+
+.sec-02-text p{
+
+    margin: 0;
+    padding: 25px 0;
+
+    width: 100%;
+    line-height: 1.6;
+
+    font-family: "petala-pro", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--gris);
+}
+
+.sec-02-text a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+    width: 320px;
+    height: 40px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+    background-color: var(--naranja);
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+}
+
+.sec-02-text a:hover{
+
+    transform: translateY(-3px) scale(1.01);   /* sube y agranda 3% */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.15);  /* sombra más profunda */
+}
+
+/* =================== SECTION 3 ===================== */
+
+.sec-03{
+    margin: 0;
+    padding: 0 2.5rem 10rem;
+}
+
+hr{
+    border-top: 1px solid var(--rosa)
+}
+
+/* titulo */
+.sec-03 h2{ 
+    font-size: 33px;
+    line-height: 1.2;
+    color: var(--rosa);
+    margin: 4rem 0;
+}
+
+.sec-03-text{
+    align-items: center;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    align-items: stretch; /* esto es para tengan un largo igualitario */
+}
+
+/* cards */
+.cards{
+    flex: 1; /* hace que todas las cards mismo ancho */
+
+  background: white;
+
+  border-radius: 20px;
+  padding: 25px;
+
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cards p{
+    margin: 0;
+    padding: 0;
+}
+
+.cards h2{
+    margin: 2rem 0 0;
+    padding: 0;
+
+    color:  var(--gris);
+}
+
+.cards h3{
+    margin: 1rem 0;
+    padding:0;
+    font-weight: 400;
+}
+
+.cards img{
+    width: 100%;
+    height: 50%; 
+    object-fit: cover; /* para que no se deforme la img */
+
+    border-radius: 20px;
+    display: block;
+}
+

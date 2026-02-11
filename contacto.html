@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Home, Clinica Veterinaria Patitas">
+    <meta name="author" content="Jose Angel, Paola, Dilrimar, Paloma">
+    <meta name="keywords" content="veterinaria, clinica, clinica veterinaria, perros, gatos, pajaros, conejos, 
+                                    mascotas, animales, animales domesticos, Patitas, patitas">
+
+    <title>contacto</title>
+
+    <link rel="icon" type="image/x-icon" href="IMG/LOGO/favicon_io/favicon.ico">
+
+    <!--TIPOGRAFIA PARA TTUTLOS-->
+    <link rel="stylesheet" href="https://use.typekit.net/qty6lzm.css">
+    <!--TIPOGRAFIA PARA TEXTO-->
+    <link rel="stylesheet" href="https://use.typekit.net/qty6lzm.css">
+
+    <!--ESTILOS BASE, NO MODIFICAR PREFERENTEMENTE-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <a href="index.html">
+                <img alt="Logo Clinica Veterinaria Patitas" src="IMG/LOGO/Logo-3.png">
+            </a>
+        </div>
+
+        <ul>
+            <!--hay que reemplazar los # para linkear todas paginas internas cuando las tengan-->
+            <li><a href="GRUPAL-DIL/NOTICIAS PATITAS/indexnoticias.html">NOTICIAS</a></li>
+            <li><a href="GRUPAL-DIL/servicios.html">SERVICIOS</a></li>
+            <li><a href="nosotros.html">SOBRE NOSOTROS</a> </li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="#">PORTAL CLIENTE</a></li> <!--Esto es el LOG IN/ SIGN UP, el portal cliente-->
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="form-container">
+            <video autoplay muted loop playsinline preload="auto">
+                <!--el preload es para que no parpadee cuando entras a la section, el playsinline es para mobile-->
+                <source src="IMG/videos/Vet-cat.mp4" type="video/mp4">
+            </video>
+
+            <form class="contacto-form" action="">
+
+                <h1>Contacta con nosotros</h1>
+
+                <div class="fila-simple">
+
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+
+                </div>
+
+                <div class="fila-doble">
+
+                    <div>
+                        <label for="tel">Teléfono</label>
+                        <input type="tel" id="tel" name="tel" placeholder="+34 000 000 000" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="nombre@email.com" required>
+                    </div>
+
+                </div>
+
+                <div class="fila-simple">
+
+                    <label for="pet">Nombre de tu mascota</label>
+                    <input type="text" id="pet" name="pet" placeholder="Scooby-Doo" required>
+
+                </div>
+
+                <div class="fila-simple">
+
+                    <label for="tipologia">Tipo de mascota</label>
+                    <select name="tipologia" id="tipologia" required>
+                        <option value="" disabled selected hidden>Selecciona el tipo de mascota que tienes...</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="conejo">Conejo</option>
+                        <option value="roedor">Roedor</option>
+                    </select>
+
+                </div>
+
+                <div class="fila-simple">
+                    <label for="comentarios">Dejanos tus comentarios</label>
+                    <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí..." maxlength="250"
+                        row="6"></textarea>
+                </div>
+
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+        </section>
+
+        <!-------- FQA ------->
+        <section class="FQA">
+
+            <hr>
+
+            <h1>Preguntas Frecuentes</h1>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-pregunta">
+                        ¿Con qué frecuencia debe visitar el veterinario mi mascota?
+                    </span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-pregunta">
+                        Ya he programado mi cita, ¿Qué ocurre ahora?
+                    </span>
+                    <span class="faq-icon">+</span>
+                </button>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-pregunta">
+                        ¿Tu mascota necesita algún tipo de revisión especial?
+                    </span>
+                    <span class="faq-icon">+</span>
+                </button>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-btn">
+                    <span class="faq-pregunta">
+                        Me preocupan las vacunas y sus posibles reacciones, ¿Qué puedo esperar?
+                    </span>
+                    <span class="faq-icon">+</span>
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="logo-legales">
+                <img src="IMG/LOGO/patitassss.png" alt="logo-Clinica-Veterinaria-Patitas">
+                <ul>
+                    <li><a href="#">Avisos Legales</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Politicas de cookies</a></li>
+                    <li><a href="#">Condiciones Generales</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-form">
+                <h3>Contáctanos</h3>
+
+                <form>
+                    <fieldset>
+                        <label>Nombre y apellido</label>
+                        <input type="text" placeholder="Nombre y Apellido" id="f-nombre" name="nombre" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Teléfono de contacto</label>
+                        <input type="number" placeholder="+54 000 000 000" id="f-telefono" name="telefono" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>E-mail</label>
+                        <input type="email" placeholder="nombre@email.com" id="f-email" name="e-mail" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label>Comentarios</label>
+                        <textarea id="f-comentarios" name="comentarios" rows="5"></textarea>
+                    </fieldset>
+
+                    <button>Enviar</button>
+
+                </form>
+
+            </div>
+
+            <div class="footer-mapa">
+                <h3> Cirección</h3>
+                <p>C. de Portugal, 37, Local 1º Planta, 28943 Fuenlabrada, Madrid</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.6036316006325!2d-3.812148023209334!3d40.28455427146111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418bb3d8d8275d%3A0x5ef2ae079a7470e5!2sGrupo%20Col%C3%B3n%20IECM-%20Fuenlabrada!5e0!3m2!1ses!2ses!4v1765479198366!5m2!1ses!2ses"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--SCRIPT-->
+
+    <script src="style.js"></script>
+
+</body>
+
+</html>

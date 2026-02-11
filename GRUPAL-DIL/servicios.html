@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de patitas</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleservi.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!--TIPOGRAFIA PARA TTUTLOS-->
+    <link rel="stylesheet" href="https://use.typekit.net/qty6lzm.css">
+    <!--TIPOGRAFIA PARA TEXTO-->
+    <link rel="stylesheet" href="https://use.typekit.net/qty6lzm.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="file:///Users/mikakishi/Documents/CURSOS/Curso_Fuenlabrada/3-TP/3.2_TP-GRUPAL/index.html"> <img
+                    src="logo/Logo-3.png" alt="Logo patitas veterinaria"> </a>
+            <h1> SERVICIOS DE LA VETERINARIA PATITAS</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#medicina">Medicina General</a></li>
+                <li><a href="#quirofano">Quirófano</a></li>
+                <li><a href="#rayosx">Rayos X</a></li>
+                <li><a href="#odontología">Odontología</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="Servicios">
+
+        <!-- MEDICINA GENERAL -->
+        <section class="card" id="medicina">
+            <i class="fa-solid fa-stethoscope icon"></i>
+            <h2>Medicina General</h2>
+            <p>Atención integral para perros, gatos y conejos.</p>
+            <button class="btn" data-video="medicina">Ver más</button>
+            <video class="video" src="img-videos/medicina general.mp4" muted loop></video>
+        </section>
+
+        <!-- QUIROFANO -->
+        <section class="card" id="quirofano">
+            <i class="fa-solid fa-heart-pulse icon"></i>
+            <h2>Quirófano</h2>
+            <p>Cirugías seguras con tecnología avanzada.</p>
+            <button class="btn" data-video="quirofano">Ver más</button>
+            <video class="video" src="img-videos/quirofano.mp4" muted loop></video>
+        </section>
+
+        <!-- RAYOS X -->
+        <section class="card" id="rayosx">
+            <i class="fa-solid fa-x-ray icon"></i>
+            <h2>Rayos X</h2>
+            <p>Diagnóstico preciso y rápido.</p>
+            <button class="btn" data-video="rayosx">Ver más</button>
+            <video class="video" src="img-videos/rayos X.mp4" muted loop></video>
+        </section>
+
+        <!-- ODONTOLOGIA -->
+        <section class="card" id="odontologia">
+            <i class="fa-solid fa-tooth icon"></i>
+            <h2>Odontología Veterinaria</h2>
+            <p>Tratamientos dentales especializados para perros, gatos y conejos.</p>
+            <button class="btn" data-video="odontologia">Ver más</button>
+            <video class="video" src="img-videos/odontologia.mp4" muted loop></video>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Clínica Veterinaria Patitas | Marca Profesional</p>
+            <img src="img-videos/conejito.jpg" alt="conejito" class="footer-logo">
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
